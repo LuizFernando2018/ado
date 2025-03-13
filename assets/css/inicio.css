@@ -1,0 +1,30 @@
+.index {
+    background: var(--azul);
+}
+
+
+.inicio {
+    text-align: center;
+    color: #FFFF;    
+} 
+
+@media screen and (min-width: 0px) {
+    .inicio {
+        margin-top: 6rem;
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .inicio {
+        margin-top: 10rem;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .inicio {
+        height: calc(100vh - 17rem );
+        margin-top: 2.5rem;
+    }
+}

@@ -1,0 +1,17 @@
+.btn {
+    background: var(--vermelho);
+    border-radius: 6px;
+    height: 40px;
+    text-decoration: none;
+    font-family: var(--Poppins);
+    font-weight: 600;
+
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{
+    background: var(--vermelho-claro);
+}

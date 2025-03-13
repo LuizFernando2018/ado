@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem - Adopet</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="mensagem">
+    <!-- cabecalho -->
+    <header>
+        <!-- formas do background -->
+        <div class="forma__topo"></div>
+        <div class="forma__lateral esquerda"></div>
+        <!-- menu -->
+        <nav class="cabecalho container__cabecalho">
+            <ul class="cabecalho__menu" id="logado">
+                <li class="cabecalho__menu--item menu--logo" id="logo"></li>
+                <li class="cabecalho__menu--item"><a href="./animais.html"><img src="./assets/img/Casa.svg" alt="Home"></a></li>
+                <li class="cabecalho__menu--item"><a href="./mensagem.html"><img src="./assets/img/Mensagens.svg" alt="Mensagens"></a>
+                </li>
+                <li class="cabecalho__menu--item" id="perfil"><a href="./perfil.html"><img src="./assets/img/user.png" alt="Perfil"
+                            class="cabecalho__menu--itemUser"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo__mensagem">
+        <!-- paragrafo inicial -->
+        <p class="texto__introducao container">Envie uma mensagem para a pessoa ou instituição que está cuidado do
+            animal:</p>
+            <!-- formulario de mensagem: -->
+        <section class="mensagem__form container--cadastro">
+            <form data-formMensagem action="" class="formulario container--mensagem">
+                <!-- TRECHO EXIBIDO DE FORMA DINAMICA
+                    
+                <label for="nome" class="formulario__campo" >Nome</label>
+                <input type="text" class="formulario__input input" id="nome" placeholder="Insira seu nome completo">
+                <label for="fone" class="formulario__campo">Telefone</label>
+                <input type="tel" class="formulario__input input" id="phone" placeholder="Insira seu telefone e/ou whatsapp">
+                <label for="nomeAnimal" class="formulario__campo">Nome do animal</label>
+                <input type="text" class="formulario__input input" id="nomeAnimal" placeholder="Por qual animal você se interessou?">
+                <label for="mensagem" class="formulario__campo">Mensagem</label>
+                <textarea class="formulario__textarea" id="mensagem" rows="8" cols="50" placeholder="Escreva sua mensagem."></textarea> -->
+                <button href="" class="formulario__botao btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- rodape -->
+    <footer class="rodape">
+        <p>2023 - Desenvolvido por Alan Abilio.</p>
+    </footer>
+</body>
+<script src="./app.js" type="module"></script>
+<script src="./js/Mensagens/mensagens.js" type="module"></script>
+</html>

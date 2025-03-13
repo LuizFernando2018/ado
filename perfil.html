@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Adopet</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <body class="mensagem">
+        <!-- cabecalho -->
+        <header>
+            <!-- formas do background -->
+            <div class="forma__topo"></div>
+            <div class="forma__lateral esquerda"></div>
+            <!-- menu -->
+            <nav class="cabecalho container__cabecalho">
+                <ul class="cabecalho__menu" id="logado">
+                    <li class="cabecalho__menu--item menu--logo" id="logo"></li>
+                    <li class="cabecalho__menu--item"><a href="./animais.html"><img src="./assets/img/Casa.svg" alt="Home"></a></li>
+                    <li class="cabecalho__menu--item"><a href="./mensagem.html"><img src="./assets/img/Mensagens.svg" alt="Mensagens"></a>
+                    </li>
+                    <li class="cabecalho__menu--item" id="perfil"><a href="#"><img src="./assets/img/user.png" alt="Perfil"
+                                class="cabecalho__menu--itemUser"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- paragrafo inicial -->
+            <p class="texto__introducao container">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>    
+            <section class="mensagem__form container--cadastro">
+                <h2 class="formulario__perfil--titulo">Perfil</h2>
+                <!-- formulario de perfil: -->
+                <form data-formPerfil action="" class="formulario container--mensagem">
+                    <!-- TRECHO EXIBIDO DE FORMA DINAMICA
+                        
+                        <label for="foto" class="formulario__campo" >Foto</label>
+                        <figure class="formulario__fotoperfil">
+                            <img src="./assets/img/perfil.jpeg" alt="" class="formulario__fotoperfil--foto">
+                            <figcaption class="formulario__fotoperfil--legenda">Clique na foto para editar</figcaption>
+                        </figure>
+                    
+                    <div class="input-container">
+                    <label for="nome" class="formulario__campo" >Nome</label>
+                    <input type="text" data-type="nome" class="formulario__input input" id="nome" placeholder="Insira seu nome completo" required>
+                    <span class="input-mensagem-erro">Campo invalido</span>
+                   </div>
+                    <div class="input-container">
+                    <label for="fone" class="formulario__campo">Telefone</label>
+                    <input type="tel" data-type="telefone" class="formulario__input input" id="phone" placeholder="55 11 XXXXXXXXX" pattern="^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$" required>
+                    <span class="input-mensagem-erro">Campo invalido</span>
+                    </div>
+                    <label for="cidade" class="formulario__campo">Cidade</label>
+                    <input type="text" class="formulario__input input" id="cidade" placeholder="Sao Paulo">
+                    <label for="mensagem" class="formulario__campo">Sobre</label>
+                    <textarea class="formulario__textarea" id="mensagem" rows="6" cols="50" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."></textarea>
+                    -->
+                    <button type="submit" href="" class="formulario__botao btn">Salvar</button>
+                </form>
+            </section>
+        </main>
+        <!-- rodape -->
+        <footer class="rodape">
+            <p>2023 - Desenvolvido por Alan Abilio.</p>
+        </footer>
+    <script src="./app.js" type="module"></script>
+    <script src="./js/Usuario/perfilUsuario.js" type="module"></script>
+    <script src="./js/Usuario/atualizarUsuario.js" type="module"></script>
+</body>
+</html>

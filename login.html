@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Adopet</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="login">
+    <!-- cabecalho -->
+    <header>
+        <!-- formas do background -->
+        <div class="forma__topo"></div>
+        <div class="forma__lateral esquerda"></div>
+        <div class="patas"></div>
+        <!-- menu -->
+            <nav class="cabecalho container__cabecalho">
+                <ul class="cabecalho__menu">
+                    <li class="cabecalho__menu--item menu--logo" id="logo"></li>
+                    <li class="cabecalho__menu--item"><a href="./index.html"><img src="./assets/img/Casa.svg" alt="Home"></a></li>
+                    <li class="cabecalho__menu--item"><a href="#"><img src="./assets/img/Mensagens.svg" alt="Mensagens"></a></li>
+                    <li class="cabecalho__menu--item" id="logout"><a href="#"><img src="./assets/img/user.png" alt="Perfil" class="cabecalho__menu--itemUser"></a></li>
+                </ul>
+            </nav>
+    </header>
+    
+    <main class="conteudo">
+        <!-- paragrafo inicial -->
+        <section class="cadastro__texto container__cadastro">
+            <img src="./assets/img/Logo Azul.svg" alt="" class="cadastro__logo">
+            <p class="login__texto">Já tem conta? Faça seu login:</p>
+        </section>
+        <!-- formulario para login -->
+        <section>
+            <form data-formLogin class="login__formulario container__cadastro" name="login">
+                <div class="input-container">
+                <label for="email" class="formulario__loggedout--campo">Email</label>
+                <input type="email" data-type="email" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$"  class="formulario__loggedout--input input" id="email" name="email" placeholder="Insira seu email" required>
+                <!-- todos inputs recebem o span abaixo para exibição de mensagem de erro -->
+                <span class="input-mensagem-erro">Campo invalido</span>
+            </div>
+                <div class="input-container">
+                <label for="senha" class="formulario__loggedout--campo">Senha</label>
+                <input type="password" data-type="senha" class="formulario__loggedout--input input" id="senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" placeholder="Insira senha" required>
+                <span class="input-mensagem-erro">Campo invalido</span>
+            </div>
+                <a href="" class="login__senha--link">Esqueci minha senha</a>
+                <button type="submit" value="Enviar" id="btnSubmit" class="formulario__loggedout--botao btn">Enviar</button>
+            </form>
+        </section>
+    </main> 
+    <footer class="rodape">
+        <!-- rodape -->
+        <p>2023 - Desenvolvido por Alan Abilio.</p>
+    </footer>
+<script src="./app.js" type="module"></script>
+<script src="./js/Usuario/logarUsuario.js" type="module"></script>
+</body>
+
+</html>

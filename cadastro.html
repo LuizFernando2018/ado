@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Adopet</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="cadastro">
+    <!-- cabecalho -->
+    <header>
+        <!-- formas do background -->
+        <div class="forma__topo"></div>
+        <div class="forma__lateral esquerda"></div>
+        <div class="patas"></div>
+        <!-- menu -->
+        <nav class="cabecalho container__cabecalho">
+            <ul class="cabecalho__menu">
+                <li class="cabecalho__menu--item menu--logo" id="logo"></li>
+                <li class="cabecalho__menu--item"><a href="./index.html"><img src="./assets/img/Casa.svg"
+                            alt="Home"></a></li>
+                <li class="cabecalho__menu--item"><a href="./login.html"><img src="./assets/img/Mensagens.svg"
+                            alt="Mensagens"></a></li>
+                <li class="cabecalho__menu--item" id="logout"><a href="#"><img src="./assets/img/user.png" alt="Perfil"
+                            class="cabecalho__menu--itemUser"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <!-- paragrafo inicial -->
+        <section class="cadastro__texto container__cadastro">
+            <img src="./assets/img/Logo Azul.svg" alt="" class="cadastro__logo">
+            <p class="cadastro__texto--paragrafo">Ainda não tem cadastro?</p>
+            <p class="cadastro__texto--paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
+            </p>
+        </section>
+        <!-- formulario de cadastro -->
+        <section>
+            <form data-formCadastro class="cadastro__formulario container__cadastro">
+                <div class="input-container">
+                    <label for="nome" class="formulario__loggedout--campo">Nome</label>
+                    <input type="text" data-type="nome" class="formulario__loggedout--input input" id="nome"
+                        placeholder="Digite seu nome completo" required>
+                        <!-- todos inputs do site recebem esse span abaixo para exibição de mensagem de erro -->
+                    <span class="input-mensagem-erro">Campo invalido</span> 
+                </div>
+                <div class="input-container">
+                    <label for="email" class="formulario__loggedout--campo">Email</label>
+                    <input type="text" data-type="email" class="formulario__loggedout--input input" id="email"
+                        pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$" title="preencha o campo"
+                        placeholder="Escolha seu melhor email" required>
+                    <span class="input-mensagem-erro">Campo invalido</span>
+                </div>
+                <div class="input-container">
+                    <label for="senha" class="formulario__loggedout--campo">Senha</label>
+                    <input type="password" data-type="senha" class="formulario__loggedout--input input" id="senha"
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" placeholder="Crie uma senha" required>
+                    <span class="input-mensagem-erro">Campo invalido</span>
+                </div>
+                <div class="input-container">
+                    <label for="confirmaSenha" class="formulario__loggedout--campo">Confirme sua senha</label>
+                    <input type="password" data-type="senha" class="formulario__loggedout--input input"
+                        id="confirmaSenha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$"
+                        placeholder="Repita a senha" required>
+                    <span class="input-mensagem-erro">Campo invalido</span>
+                </div>
+                <button type="submit" value="Cadastrar" id="btnSubmit" class="formulario__loggedout--botao btn">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <!-- rodape -->
+    <footer class="rodape">
+        <p>2023 - Desenvolvido por Alan Abilio.</p>
+    </footer>
+    <script src="./app.js" type="module"></script>
+    <script src="./js/Usuario/criarUsuario.js" type="module"></script>
+</body>
+
+</html>
