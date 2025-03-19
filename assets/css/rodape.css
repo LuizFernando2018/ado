@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--verde);
+    background: var(--verde); /* Verde pastel */
     color: #fff;
     font-family: var(--Poppins);
     padding: 1.5rem;
     z-index: 1;
     max-height: 100px;
-    position: absolute;
-    width: calc(100vw - 3rem);
+    position: fixed; /* Rodapé fixo */
+    bottom: 0; /* Fixa no fundo da página */
+    width: 100%; /* Ajusta a largura para 100% */
 }
