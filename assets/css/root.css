@@ -1,14 +1,15 @@
-:root{
-    --azul:#3772FF;
-    --verde:#36D6AD;
-    --vermelho: #FC7071;
-    --vermelho-claro: #FF9D9E;
-    --creme: #FCF0E3;
-    --cinza-escuro:#737380;
-    --cinza-medio: #BCBCBC;
-    --cinza-claro:#F7F7F7;
+:root {
+    --azul: #A2C8FF;         /* Azul pastel */
+    --verde: #A4E1D4;        /* Verde pastel */
+    --rosa: #F9B7D4;         /* Rosa pastel */
+    --vermelho-claro: #FF9D9E; /* Mantido o vermelho claro */
+    --creme: #FCF0E3;        /* Creme */
+    --cinza-escuro: #737380;  /* Cinza escuro */
+    --cinza-medio: #BCBCBC;   /* Cinza médio */
+    --cinza-claro: #F7F7F7;   /* Cinza claro */
 
-    --IBM:      'IBM Plex Sans', sans-serif;
-    --Poppins:  'Poppins', sans-serif;    
+    --IBM: 'IBM Plex Sans', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
 }
+
 
