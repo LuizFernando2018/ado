@@ -1,0 +1,5 @@
+.mensagem {
+    font-family: var(--Poppins);
+    color: var(--azul);
+    text-align: center;
+}
