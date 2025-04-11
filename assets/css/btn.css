@@ -1,17 +1,18 @@
 .btn {
-    background: var(--vermelho);
+    background: #F06292; /* Rosa mais claro e vibrante */
     border-radius: 6px;
     height: 40px;
     text-decoration: none;
     font-family: var(--Poppins);
     font-weight: 600;
-
-    color: #FFF;
+    
+    color: #FFFFFF; /* Letras brancas */
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background 0.3s ease;
 }
 
-.btn:hover{
-    background: var(--vermelho-claro);
+.btn:hover {
+    background: #F8BBD0; /* Rosa pastel mais claro para o hover */
 }
